@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Game Outside — an outdoor game for families</title>
+<meta name="description" content="A card game for exploring the outdoors with your kids. Draw a challenge, go find it. Works offline, no ads, no accounts.">
+<meta property="og:title" content="Game Outside">
+<meta property="og:description" content="Draw a challenge, go find it. An outdoor card game for families.">
+<meta property="og:type" content="website">
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #fbfaf7;
+    --ink: #0a1a2b;
+    --muted: #4a5a6b;
+    --card: #ffffff;
+    --line: #d3d0c7;
+    --navy: #032a54;
+    --green: #579c2c;
+    --amber: #ffc93c;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0a1424; --ink: #f2f5f8; --muted: #a8b6c6;
+      --card: #132034; --line: #26364f; --navy: #66b93a; --green: #79c947;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  }
+  .wrap { max-width: 60rem; margin: 0 auto; padding: 0 1.25rem; }
+  header { padding: 5rem 0 3.5rem; text-align: center; }
+  h1 {
+    font-size: clamp(2.75rem, 9vw, 4.5rem);
+    line-height: 1.02;
+    letter-spacing: -0.02em;
+    margin: 0 0 .75rem;
+    font-weight: 800;
+  }
+  .tagline { font-size: 1.3rem; color: var(--muted); margin: 0 0 2rem; }
+  .badge {
+    display: inline-block;
+    background: var(--amber);
+    color: #0a1a2b;
+    font-weight: 700;
+    font-size: .9rem;
+    letter-spacing: .04em;
+    text-transform: uppercase;
+    padding: .5rem 1rem;
+    border-radius: 999px;
+  }
+  .lede {
+    font-size: 1.35rem;
+    line-height: 1.55;
+    max-width: 34rem;
+    margin: 0 auto;
+  }
+  section { padding: 3.5rem 0; border-top: 2px solid var(--line); }
+  h2 { font-size: 1.9rem; margin: 0 0 1.5rem; letter-spacing: -0.01em; }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: 1.25rem;
+  }
+  .card {
+    background: var(--card);
+    border: 2px solid var(--line);
+    border-radius: 18px;
+    padding: 1.5rem;
+  }
+  .card h3 { margin: 0 0 .5rem; font-size: 1.15rem; }
+  .card p { margin: 0; color: var(--muted); font-size: .98rem; }
+  .glyph { font-size: 2rem; display: block; margin-bottom: .6rem; }
+  ol.steps { counter-reset: s; list-style: none; padding: 0; margin: 0; }
+  ol.steps li {
+    counter-increment: s;
+    position: relative;
+    padding-left: 3.25rem;
+    margin-bottom: 1.5rem;
+    min-height: 2.25rem;
+  }
+  ol.steps li::before {
+    content: counter(s);
+    position: absolute; left: 0; top: -.15rem;
+    width: 2.25rem; height: 2.25rem;
+    display: grid; place-items: center;
+    background: var(--navy); color: var(--bg);
+    border-radius: 50%;
+    font-weight: 800;
+  }
+  ol.steps strong { display: block; font-size: 1.1rem; }
+  ol.steps span { color: var(--muted); }
+  footer {
+    border-top: 2px solid var(--line);
+    padding: 2.5rem 0 4rem;
+    color: var(--muted);
+    font-size: .93rem;
+    text-align: center;
+  }
+  footer a { color: var(--green); }
+</style>
+</head>
+<body>
+
+<header class="wrap">
+  <h1>Game&nbsp;Outside</h1>
+  <p class="tagline">Get out. Explore. Play.</p>
+  <span class="badge">Coming soon to the App Store</span>
+</header>
+
+<div class="wrap">
+  <p class="lede">
+    A card game for exploring the outdoors with your kids. Draw a challenge,
+    go find it, decide together whether it counts. Then draw the next one.
+  </p>
+</div>
+
+<section class="wrap">
+  <h2>How it works</h2>
+  <ol class="steps">
+    <li>
+      <strong>Pick where you are</strong>
+      <span>A featured park with challenges written for that exact place, or Play Anywhere — a sidewalk, a back garden, a car park will do.</span>
+    </li>
+    <li>
+      <strong>Draw a card</strong>
+      <span>Nobody knows what's on it until you flip it. One challenge at a time, so everyone is looking for the same thing.</span>
+    </li>
+    <li>
+      <strong>Go find it</strong>
+      <span>A grown-up decides if it counts, and sneaky answers count too. Stuck? You get a couple of skips.</span>
+    </li>
+    <li>
+      <strong>Finish the deck</strong>
+      <span>Seven cards for a quick adventure, up to fifteen for a long one. Finish it and you're Legendary Explorers.</span>
+    </li>
+  </ol>
+</section>
+
+<section class="wrap">
+  <h2>Built for actually being outside</h2>
+  <div class="grid">
+    <div class="card">
+      <span class="glyph">📴</span>
+      <h3>Works with no signal</h3>
+      <p>The whole game is on your phone. Trailheads are exactly where the bars run out.</p>
+    </div>
+    <div class="card">
+      <span class="glyph">🔒</span>
+      <h3>No accounts, no ads</h3>
+      <p>Nothing to sign up for and nothing to collect. Your photos never leave your phone.</p>
+    </div>
+    <div class="card">
+      <span class="glyph">👣</span>
+      <h3>Ages 3 to 12</h3>
+      <p>Pick your kids' ages and the deck adjusts, so the youngest is never stuck on a card they can't do.</p>
+    </div>
+    <div class="card">
+      <span class="glyph">🚧</span>
+      <h3>Detours</h3>
+      <p>Now and then a card turns up that isn't a challenge at all. Three hundred steps before the next one, walking backwards, the slowest person setting the pace.</p>
+    </div>
+    <div class="card">
+      <span class="glyph">📍</span>
+      <h3>Real places</h3>
+      <p>Featured parks come with challenges written for what's actually there — and a bit of the place's history to read out before you start.</p>
+    </div>
+    <div class="card">
+      <span class="glyph">☀️</span>
+      <h3>Readable in sunlight</h3>
+      <p>Big type, big buttons, high contrast. Designed to be used one-handed while walking.</p>
+    </div>
+  </div>
+</section>
+
+<footer class="wrap">
+  <p>
+    <a href="./privacy/">Privacy policy</a> &middot;
+    <a href="mailto:hello@insidetherink.com">hello@insidetherink.com</a>
+  </p>
+  <p>Game Outside &middot; Inside the Rink</p>
+</footer>
+
+</body>
+</html>
